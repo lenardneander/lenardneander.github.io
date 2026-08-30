@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+check_logs.js
+check_logs.py
+check_map.js
+screenshot.js

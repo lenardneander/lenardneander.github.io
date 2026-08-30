@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of a Computational Biophysics & Computational Finance professional.">
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- jsVectorMap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="hero">
+        <video autoplay loop muted playsinline class="hero-video-bg">
+            <source src="assets/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+            <p class="greeting">Hello, I am</p>
+            <h1 class="name">Lenard Neander</h1>
+            <h2 class="title">Computational Biophysics & <br>Quantitative Finance</h2>
+            <p class="bio">Bridging the gap between complex biological systems and quantitative financial models. Passionate about data-driven insights and rigorous computational methods.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#profiles" class="btn btn-secondary">Connect</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in slide-up">
+            <div class="abstract-shape shape-1"></div>
+            <div class="abstract-shape shape-2"></div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="science">Science</button>
+                    <button class="tab-btn" data-tab="finance">Finance</button>
+                    <button class="tab-btn" data-tab="community">Community</button>
+                </div>
+            </div>
+
+            <!-- Science Projects Tab -->
+            <div id="science" class="tab-content active">
+                <div class="projects-grid">
+                    <!-- Project 1 (SARS-CoV-2) -->
+                    <div class="project-card reveal">
+                        <video class="project-video" autoplay loop muted playsinline>
+                            <source src="assets/Adsorption.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-info">
+                            <h3>SARS-CoV-2 Binding Thermodynamics</h3>
+                            <p>Developed a computational method using all-atom MD simulations and force-spectroscopy to quantitatively predict the binding free energies of polyelectrolyte viral inhibitors to the SARS-CoV-2 spike protein, aiding in antiviral drug design.</p>
+                            <a href="https://doi.org/10.1021/jacsau.4c00886" class="project-link" target="_blank" rel="noopener noreferrer">Read Paper <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finance Projects Tab -->
+            <div id="finance" class="tab-content">
+                <div class="projects-grid">
+                    <!-- Finance Project -->
+                    <div class="project-card reveal">
+                        <img src="assets/backtesting_app.png" alt="Historical Backtester & Future Simulator" class="project-img">
+                        <div class="project-info">
+                            <h3>Portfolio Backtesting & Estimation App</h3>
+                            <p>Developed a comprehensive application dedicated to the rigorous backtesting of trading strategies and the estimation of future portfolio performance.</p>
+                            <a href="http://31.97.183.125:8080/" class="project-link" target="_blank" rel="noopener noreferrer">Try it out <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Building Projects Tab -->
+            <div id="community" class="tab-content">
+                <div class="projects-grid">
+                    <!-- Community Project -->
+                    <div class="project-card reveal">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                            <i class="fas fa-users fa-3x" style="color: white;"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Student Representative</h3>
+                            <p>Worked as a Student Representative at Studierendenwerk Berlin for an international student dormitory. Managed the dorm's bar and fostered community by organizing events such as parties, karaoke nights, and board game nights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Timeline Section -->
+    <section id="cv" class="section cv-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+            
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="experience">Experience</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                </div>
+            </div>
+            
+            <!-- Experience Tab -->
+            <div id="experience" class="tab-content active">
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">07/2024 - Present</span>
+                            <h3>Student Research Assistant</h3>
+                            <h4>Zuse-Institute Berlin</h4>
+                            <p>Developed neural network models to extract dynamic path trajectories from simulation datasets.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">04/2022 - 03/2024</span>
+                            <h3>Student Research Assistant</h3>
+                            <h4>Freie Universität Berlin</h4>
+                            <p>Statistical analysis of molecular simulation data sets (Python). Contributed to 2 publications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">09/2020 - 03/2022</span>
+                            <h3>Working Student Portfolio Risk & OpRisk</h3>
+                            <h4>S Rating und Risikosysteme GmbH</h4>
+                            <p>Estimation of credit risks with Monte Carlo simulations. Development and testing of credit risk software.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div id="education" class="tab-content">
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">10/2022 - 12/2025</span>
+                            <h3>M.Sc. Computational Sciences (GPA 1.4)</h3>
+                            <h4>Freie Universität Berlin & University of Sydney</h4>
+                            <p>Courses in Machine Learning & Financial Mathematics. Thesis: Extracting reaction paths from simulations (Grade 1.0).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">10/2018 - 12/2021</span>
+                            <h3>B.Sc. Physics (GPA 1.6)</h3>
+                            <h4>Freie Universität Berlin & University of Hamburg</h4>
+                            <p>Focus on Economics and Computational Physics. Thesis: Statistical models for polymer adsorption using simulations (Grade 1.0).</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2009 - 2017</span>
+                            <h3>High School Diploma / Abitur (GPA 1.2)</h3>
+                            <h4>Sophie-Barat-Schule</h4>
+                            <p>Award for best student in chemistry (awarded by German Chemical Society).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section hobbies-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="travel">Travel</button>
+                    <button class="tab-btn" data-tab="mindfulness">Mindfulness</button>
+                </div>
+            </div>
+            
+            <!-- Travel Tab -->
+            <div id="travel" class="tab-content active">
+                <div class="project-card reveal" style="padding: 1rem;">
+                    <div id="visited-map" style="width: 100%; height: 400px; border-radius: 12px; overflow: hidden; background-color: #f1f5f9;"></div>
+                    <div class="project-info" style="text-align: center; padding-top: 1.5rem;">
+                        <h3>Countries Visited</h3>
+                        <p>A global perspective shaped by extensive travels across the Americas, Europe, Asia, and Oceania.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mindfulness Tab -->
+            <div id="mindfulness" class="tab-content">
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <i class="fas fa-om fa-3x" style="color: white;"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Mindfulness Practice</h3>
+                            <p>Cultivating presence, focus, and well-being through meditation, philosophy, and mindful living.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section id="profiles" class="section profiles-section">
+        <div class="container">
+            <h2 class="section-title text-center">Profiles</h2>
+            <div class="profiles-grid">
+                <a href="https://www.linkedin.com/in/lenard-neander-929239150/" class="profile-card reveal" target="_blank" rel="noopener noreferrer">
+                    <div class="profile-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Professional Network</p>
+                </a>
+                
+                <a href="https://scholar.google.com/citations?user=y5ZVEYQAAAAJ&hl=en&oi=ao" class="profile-card reveal" target="_blank" rel="noopener noreferrer">
+                    <div class="profile-icon scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Google Scholar</h3>
+                    <p>Academic Publications</p>
+                </a>
+                
+                <a href="https://github.com/lenardneander/" class="profile-card reveal" target="_blank" rel="noopener noreferrer">
+                    <div class="profile-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Code & Projects</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Lenard Neander. All rights reserved. | Created with the help of Google Antigravity.</p>
+        </div>
+    </footer>
+
+    <!-- jsVectorMap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
