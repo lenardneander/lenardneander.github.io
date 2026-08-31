@@ -91,16 +91,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 backgroundColor: 'transparent',
                 zoomOnScroll: false,
                 regionsSelectable: false,
-                selectedRegions: ['US', 'DE', 'AU', 'SG', 'ID', 'MY', 'CN', 'NZ', 'IN', 'TW', 'JP', 'KR', 'PE', 'CA', 'TH', 'FR', 'ES', 'PT', 'MO', 'VN', 'DK', 'NO', 'BE', 'NL', 'HK', 'IT', 'GB', 'CH', 'AT', 'TR'],
+                series: {
+                    regions: [{
+                        attribute: 'fill',
+                        values: {
+                            'US': '#60a5fa', 'SG': '#60a5fa', 'ID': '#60a5fa', 'MY': '#60a5fa', 'CN': '#60a5fa', 
+                            'NZ': '#60a5fa', 'IN': '#60a5fa', 'TW': '#60a5fa', 'JP': '#60a5fa', 'KR': '#60a5fa', 
+                            'TH': '#60a5fa', 'FR': '#60a5fa', 'ES': '#60a5fa', 'PT': '#60a5fa', 'MO': '#60a5fa', 
+                            'VN': '#60a5fa', 'DK': '#60a5fa', 'NO': '#60a5fa', 'BE': '#60a5fa', 'NL': '#60a5fa', 
+                            'HK': '#60a5fa', 'IT': '#60a5fa', 'GB': '#60a5fa', 'CH': '#60a5fa', 'AT': '#60a5fa', 'TR': '#60a5fa',
+                            'DE': '#f59e0b', 'AU': '#f59e0b', 'CA': '#f59e0b', 'PE': '#f59e0b'
+                        }
+                    }]
+                },
+                onRegionTooltipShow: function(event, tooltip, code) {
+                    if (code === 'CA') {
+                        tooltip.text(tooltip.text() + ' - Presented poster at UBC (2022)');
+                    } else if (code === 'AU') {
+                        tooltip.text(tooltip.text() + ' - Studied at University of Sydney');
+                    } else if (code === 'PE') {
+                        tooltip.text(tooltip.text() + ' - Volunteer Work at School');
+                    } else if (code === 'DE') {
+                        tooltip.text(tooltip.text() + ' - Lived & Worked');
+                    }
+                },
                 regionStyle: {
                     initial: {
                         fill: '#cbd5e1',
                         stroke: 'none',
                         strokeWidth: 0,
                         strokeOpacity: 1
-                    },
-                    selected: {
-                        fill: '#60a5fa'
                     }
                 }
             });
