@@ -94,13 +94,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 series: {
                     regions: [{
                         attribute: 'fill',
+                        scale: {
+                            visited: '#60a5fa',
+                            lived: '#f59e0b'
+                        },
                         values: {
-                            'US': '#60a5fa', 'SG': '#60a5fa', 'ID': '#60a5fa', 'MY': '#60a5fa', 'CN': '#60a5fa', 
-                            'NZ': '#60a5fa', 'IN': '#60a5fa', 'TW': '#60a5fa', 'JP': '#60a5fa', 'KR': '#60a5fa', 
-                            'TH': '#60a5fa', 'FR': '#60a5fa', 'ES': '#60a5fa', 'PT': '#60a5fa', 'MO': '#60a5fa', 
-                            'VN': '#60a5fa', 'DK': '#60a5fa', 'NO': '#60a5fa', 'BE': '#60a5fa', 'NL': '#60a5fa', 
-                            'HK': '#60a5fa', 'IT': '#60a5fa', 'GB': '#60a5fa', 'CH': '#60a5fa', 'AT': '#60a5fa', 'TR': '#60a5fa',
-                            'DE': '#f59e0b', 'AU': '#f59e0b', 'CA': '#f59e0b', 'PE': '#f59e0b'
+                            'US': 'visited', 'SG': 'visited', 'ID': 'visited', 'MY': 'visited', 'CN': 'visited', 
+                            'NZ': 'visited', 'IN': 'visited', 'TW': 'visited', 'JP': 'visited', 'KR': 'visited', 
+                            'TH': 'visited', 'FR': 'visited', 'ES': 'visited', 'PT': 'visited', 'MO': 'visited', 
+                            'VN': 'visited', 'DK': 'visited', 'NO': 'visited', 'BE': 'visited', 'NL': 'visited', 
+                            'HK': 'visited', 'IT': 'visited', 'GB': 'visited', 'CH': 'visited', 'AT': 'visited', 'TR': 'visited',
+                            'DE': 'lived', 'AU': 'lived', 'CA': 'lived', 'PE': 'lived'
                         }
                     }]
                 },
