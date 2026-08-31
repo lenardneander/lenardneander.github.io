@@ -278,44 +278,73 @@ ul {
     margin-bottom: 2rem;
 }
 
-.hero-skills {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 400px;
-    z-index: 10;
+/* Skills & Tools Section */
+.skills-section {
+    padding: 6rem 0;
+    background: #ffffff;
 }
 
-.hero-skill-chip {
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-category-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.skill-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary);
+}
+
+.skill-header {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(96, 165, 250, 0.4);
-    padding: 1.2rem 1.8rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.hero-skill-chip:hover {
-    background: rgba(15, 23, 42, 0.9);
-    transform: translateX(10px);
-    border-color: #60a5fa;
-    box-shadow: 0 10px 40px rgba(96, 165, 250, 0.2);
+.skill-header i {
+    font-size: 1.5rem;
+    color: var(--primary);
 }
 
-.hero-skill-chip i {
-    color: #60a5fa;
-    font-size: 1.8rem;
-    width: 35px;
-    text-align: center;
+.skill-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--dark);
+}
+
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tool-tag {
+    background: #f1f5f9;
+    color: var(--text);
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.tool-tag:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
 }
 
 /* Abstract Visuals */
