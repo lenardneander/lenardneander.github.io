@@ -115,8 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         tooltip.text(tooltip.text() + ' - Studied at University of Sydney (2023)');
                     } else if (code === 'PE') {
                         tooltip.text(tooltip.text() + ' - Volunteer Work at School (2015)');
-                    } else if (code === 'DE') {
-                        tooltip.text(tooltip.text() + ' - Lived & Worked');
                     }
                 },
                 regionStyle: {
