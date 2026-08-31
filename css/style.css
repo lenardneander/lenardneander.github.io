@@ -339,12 +339,52 @@ ul {
     font-weight: 500;
     border: 1px solid #e2e8f0;
     transition: all 0.2s ease;
+    cursor: help;
+    position: relative;
 }
 
 .tool-tag:hover {
     background: var(--primary);
     color: white;
     border-color: var(--primary);
+}
+
+.tool-tag[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: white;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: normal;
+    width: max-content;
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 8px;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.tool-tag[data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #1e293b transparent transparent transparent;
+    margin-bottom: -4px;
+    z-index: 1000;
+    pointer-events: none;
 }
 
 /* Abstract Visuals */
