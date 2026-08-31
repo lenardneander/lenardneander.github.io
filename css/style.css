@@ -280,37 +280,42 @@ ul {
 
 .hero-skills {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    max-width: 600px;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
 }
 
 .hero-skill-chip {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 0.5rem 1.2rem;
-    border-radius: 2rem;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    color: #f3f4f6;
-    font-size: 0.9rem;
-    font-weight: 500;
+    gap: 1.2rem;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(96, 165, 250, 0.4);
+    padding: 1.2rem 1.8rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
     transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .hero-skill-chip:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: rgba(15, 23, 42, 0.9);
+    transform: translateX(10px);
+    border-color: #60a5fa;
+    box-shadow: 0 10px 40px rgba(96, 165, 250, 0.2);
 }
 
 .hero-skill-chip i {
     color: #60a5fa;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    width: 35px;
+    text-align: center;
 }
 
 /* Abstract Visuals */
