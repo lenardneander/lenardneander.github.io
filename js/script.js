@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 onRegionTooltipShow: function(event, tooltip, code) {
                     if (code === 'CA') {
-                        tooltip.text(tooltip.text() + ' - Presented poster at UBC (2022)');
+                        tooltip.text(tooltip.text() + ' - Presented poster at University of British Columbia (2022)');
                     } else if (code === 'AU') {
                         tooltip.text(tooltip.text() + ' - Studied at University of Sydney (2023)');
                     } else if (code === 'PE') {
