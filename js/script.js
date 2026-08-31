@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (code === 'CA') {
                         tooltip.text(tooltip.text() + ' - Presented poster at UBC (2022)');
                     } else if (code === 'AU') {
-                        tooltip.text(tooltip.text() + ' - Studied at University of Sydney');
+                        tooltip.text(tooltip.text() + ' - Studied at University of Sydney (2023)');
                     } else if (code === 'PE') {
-                        tooltip.text(tooltip.text() + ' - Volunteer Work at School');
+                        tooltip.text(tooltip.text() + ' - Volunteer Work at School (2015)');
                     } else if (code === 'DE') {
                         tooltip.text(tooltip.text() + ' - Lived & Worked');
                     }
